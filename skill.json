@@ -1,0 +1,36 @@
+{
+  "name": "genpark-autonomous-form-autofill-resolver-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous web checkout form field analyzer and heuristic autofill engine resolving names, addresses, and contact parameters.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "browser-automation",
+  "tags": [
+    "form-autofill",
+    "browser-agent",
+    "checkout-automation",
+    "heuristic-matching",
+    "e-commerce"
+  ],
+  "inputs": {
+    "user_profile": {
+      "type": "object"
+    },
+    "form_fields": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "total_fields": {
+      "type": "integer"
+    },
+    "matched_fields_count": {
+      "type": "integer"
+    },
+    "field_assignments": {
+      "type": "array"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
